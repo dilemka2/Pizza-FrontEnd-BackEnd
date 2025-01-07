@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza Shop</title>
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/css.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header id="header">
+    <header>
         <div class="container">
             <div class="logo">
                 <div class="logoF">D</div>
@@ -33,7 +33,11 @@
 
             <div class="login-box">
                 <i class='bx bx-cart'></i>
+                {{#ifEquals account 'is'}}
+                <a href="/profile" class="btn">Profile</a>
+                {{else}}
                 <a href="/login" class="btn" id="loginBTN">Log in</a>
+                {{/ifEquals}}
             </div>
         </div>
     </header>
@@ -256,7 +260,6 @@
                 <a href="" class="btn orangebtn">Reservation</a>
             </div>
         </div>
-        <a href="#header" id="getTopBTN"><i class='bx bx-up-arrow-alt'></i></a>
     </main>
     
     <footer>
@@ -298,9 +301,9 @@
                 <div class="footer-box">
                     <h3>Get in touch</h3>
                     <ul>
-                        <li><a href="#">3247 Johnson Ave, Bronx, NY<br>10463, Amerika Serikat</a></li>
-                        <li><a href="#">delizioso@gmail.com</a></li>
-                        <li><a href="#">+123 4567 8901</a></li>
+                        <li>3247 Johnson Ave, Bronx, NY<br>10463, Amerika Serikat</li>
+                        <li>delizioso@gmail.com</li>
+                        <li>+123 4567 8901</li>
                     </ul>
                 </div>
             </div>
@@ -309,6 +312,6 @@
             <p>&#169; CarpoolVenom All Right Reserved</p>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/js.js"></script>
 </body>
 </html>

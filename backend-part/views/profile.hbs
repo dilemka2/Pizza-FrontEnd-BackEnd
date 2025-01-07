@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logoF">D</div>
+                <div class="logoS">Delizi<span>oso</span></div>
+            </div>
+
+            <i class="bx bx-menu" id="menu-icon"></i>
+
+            <ul class="navbar">
+                <li><a href="/" class="activeLi">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Order Onlinee</a></li>
+                <li><a href="#">Reservation</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+            <div class="login-box">
+                <i class='bx bx-cart'></i>
+                {{#ifEquals account 'is'}}
+                <a href="/profile" class="btn">Profile</a>
+                {{else}}
+                <a href="#" class="btn" id="loginBTN">Log in</a>
+                {{/ifEquals}}
+            </div>
+        </div>
+    </header>
+    <main>
+       <h2 style="text-align: center; margin: 100px 0 0 0">Welcome {{name}} !</h2>
+       <form action="/logout" method="post">
+            <button type="submit" class="btnLOG">Log out</button>
+       </form>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer-box">
+                    <div class="logo">
+                        <div class="logoF">D</div>
+                        <div class="logoS">Delizi<span>oso</span></div>
+                    </div>
+                    <p>Viverra gravida morbi egestas facilisis tortor netus non duis tempor.</p>
+                    <div class="socials">
+                        <i class='bx bxl-instagram'></i>
+                        <i class='bx bxl-twitter'></i>
+                        <i class='bx bxl-facebook'></i>
+                    </div>
+                </div>
+
+                <div class="footer-box">
+                    <h3>Page</h3>
+                    <ul>
+                        <li><a href="Home">Home</a></li>
+                        <li><a href="Menu">Menu</a></li>
+                        <li><a href="Order Online">Order Online</a></li>
+                        <li><a href="Catering">Catering</a></li>
+                        <li><a href="Reservation">Reservation</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-box">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="About Us">About Us</a></li>
+                        <li><a href="Testimonial">Testimonial</a></li>
+                        <li><a href="Event">Event</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-box">
+                    <h3>Get in touch</h3>
+                    <ul>
+                        <li>3247 Johnson Ave, Bronx, NY<br>10463, Amerika Serikat</li>
+                        <li>delizioso@gmail.com</li>
+                        <li>+123 4567 8901</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&#169; CarpoolVenom All Right Reserved</p>
+        </div>
+    </footer>
+    <script src="js/js.js"></script>
+</body>
+
+</html>
