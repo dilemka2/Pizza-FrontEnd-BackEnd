@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logoF">D</div>
+                <div class="logoS">Delizi<span>oso</span></div>
+            </div>
+
+            <i class="bx bx-menu" id="menu-icon"></i>
+
+            <ul class="navbar">
+                <li><a href="/" class="activeLi">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#" >Order Onlinee</a></li>
+                <li><a href="#">Reservation</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+            <div class="login-box">
+                <i class='bx bx-cart'></i>
+                <a href="/login" class="btn" id="loginBTN">Log in</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="home" id="home">
+            <div class="container">
+                <div class="home-text">
+                    <h3>Restauran</h3>
+                    <h1>Italian<br>Cuisine</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sodales senectus dictum arcu sit tristique<br>donec eget.</p>
+                    <div class="buttons-list">
+                        <button class="btn orangebtn">Order now</button>
+                        <button class="btn">Reservation</button>
+                    </div>
+                </div>
+
+                <div class="home-img">
+                    <img src="img/home-img.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="welcome" id="welcome">
+            <div class="container">
+                <div class="welcome-img">
+                    <img src="img/welcome-img.png" alt="">
+                </div>
+                <div class="welcome-text">
+                    <h2>Welcome to <span>delizioso</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin. Congue nibh nulla
+                    malesuada ultricies nec quam</p>
+                    <a href="#" class="btn orangebtn">See our menu</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="menu" id="menu">
+            <div class="container">
+                <h2>Our popular menu</h2>
+                <ul class="menu-filter">
+                    <li class="active-fl">All catagory</li>
+                    <li>Dinner</li>
+                    <li>Launch</li>
+                    <li>Dessert</li>
+                    <li>Drink</li>
+                </ul>
+                <div class="products-box">
+                    <div class="box">
+                        <img src="img/p1.png" alt="">
+                        <h2>Spaghetti</h2>
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                        <div class="price-box">
+                            <strong>$12.05</strong>
+                            <a href="#" class="btn orangebtn">Order Now</a>
+                        </div>
+                    </div>
+                
+                    <div class="box">
+                        <img src="img/p2.png" alt="">
+                        <h2>Gnocchi</h2>
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                        <div class="price-box">
+                            <strong>$12.05</strong>
+                            <a href="#" class="btn orangebtn">Order Now</a>
+                        </div>
+                    </div>
+                
+                    <div class="box">
+                        <img src="img/p3.png" alt="">
+                        <h2>Rovioli</h2>
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                        <div class="price-box">
+                            <strong>$12.05</strong>
+                            <a href="#" class="btn orangebtn">Order Now</a>
+                        </div>
+                    </div>
+                
+                    <div class="box">
+                        <img src="img/p4.png" alt="">
+                        <h2>Penne Alla Vodak</h2>
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                        <div class="price-box">
+                            <strong>$12.05</strong>
+                            <a href="#" class="btn orangebtn">Order Now</a>
+                        </div>
+                    </div>
+                
+                    <div class="box">
+                        <img src="img/p5.png" alt="">
+                        <h2>Risoto</h2>
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                        <div class="price-box">
+                            <strong>$12.05</strong>
+                            <a href="#" class="btn orangebtn">Order Now</a>
+                        </div>
+                    </div>
+                
+                    <div class="box">
+                        <img src="img/p6.png" alt="">
+                        <h2>Splitza Signature</h2>
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                        <div class="price-box">
+                            <strong>$12.05</strong>
+                            <a href="#" class="btn orangebtn">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-slider">
+                    <i class='bx  arrow bx-chevron-left'></i>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <i class='bx bx-dots-horizontal-rounded'></i>
+                    <i class='bx arrow  bx-chevron-right'></i>
+                </div>
+            </div>
+        </section>
+
+        <section class="reserve" id="reserve">
+            <div class="container">
+                <div class="reserve-img">
+                    <img src="img/reserve-img.png" alt="">
+                </div>
+                <div class="reserve-text">
+                    <h2>Let's reserve<br><span>a table</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin. Congue nibh
+                        nulla malesuada ultricies nec quam</p>
+                    <a href="#" class="btn orangebtn">reservetion</a>
+                </div>
+            
+            </div>
+        </section>
+
+        <section class="chefs">
+            <h2>Our greatest chef</h2>
+            <div class="chefs-list">
+                <article>
+                    <img src="img/1.png" alt="">
+                    <span>Betran Komar</span>
+                    <p>Head chef</p>
+                </article>
+
+                <article>
+                    <img src="img/2.png" alt="">
+                    <span>Ferry Sauwi</span>
+                    <p>Chef</p>
+                </article>
+
+                <article>
+                    <img src="img/3.png" alt="">
+                    <span>Iswan Dracho</span>
+                    <p>Chef</p>
+                </article>
+            </div>
+            <a href="#" class="btn">View all</a>
+        </section>
+
+        <div class="review">
+            <h2>Our customers say</h2>
+            <img class="pfp"  src="img/pfp.png" alt="">
+            <h3>Starla Virgoun</h3>
+            <p class="pfpP">Financial advisor</p>
+            <p class="quoteP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin. Congue nibh nulla
+            malesuada ultricies nec quam</p>
+            <div class="users-img">
+                <img src="img/Users.png" alt="">
+            </div>
+        </div>
+
+        <div class="traffic" id="traffic">
+            <h2>we are open from</h2>
+            <h3>Monday-Sunday</h3>
+            <p>Launch : Mon-Sun : 11:00am-02:00pm<br>Dinner : sunday : 04:00pm-08:00pm<br>04:00pm-09:00pm</p>
+            <div class="buttons-list">
+                <a href="" class="btn">Order now</a>
+                <a href="" class="btn orangebtn">Reservation</a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer-box">
+                    <div class="logo">
+                        <div class="logoF">D</div>
+                        <div class="logoS">Delizi<span>oso</span></div>
+                    </div>
+                    <p>Viverra gravida morbi egestas facilisis tortor netus non duis tempor.</p>
+                    <div class="socials">
+                        <i class='bx bxl-instagram'></i>
+                        <i class='bx bxl-twitter'></i>
+                        <i class='bx bxl-facebook'></i>
+                    </div>
+                </div>
+
+                <div class="footer-box">
+                    <h3>Page</h3>
+                    <ul>
+                        <li><a href="Home">Home</a></li>
+                        <li><a href="Menu">Menu</a></li>
+                        <li><a href="Order Online">Order Online</a></li>
+                        <li><a href="Catering">Catering</a></li>
+                        <li><a href="Reservation">Reservation</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-box">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="About Us">About Us</a></li>
+                        <li><a href="Testimonial">Testimonial</a></li>
+                        <li><a href="Event">Event</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-box">
+                    <h3>Get in touch</h3>
+                    <ul>
+                        <li>3247 Johnson Ave, Bronx, NY<br>10463, Amerika Serikat</li>
+                        <li>delizioso@gmail.com</li>
+                        <li>+123 4567 8901</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&#169; CarpoolVenom All Right Reserved</p>
+        </div>
+    </footer>
+    <script src="js/js.js"></script>
+</body>
+</html>
